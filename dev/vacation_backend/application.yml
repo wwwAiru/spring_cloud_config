@@ -31,3 +31,6 @@ org_structure:
   firstname: "4caa94ed-8bee-422f-8c35-088faf321fba"
   patronymic: "f73b08e3-03f2-4c8b-9d27-84347daa716a"
   avatar: "d01ad323-e69b-4413-9d57-256613e62ee0"
+
+server:
+  port: 8787
