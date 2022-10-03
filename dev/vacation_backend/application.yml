@@ -1,6 +1,6 @@
 spring:
   application:
-    name: vacation-backend
+    name: vacation_backend
   jackson:
     default-property-inclusion: non_null
 
