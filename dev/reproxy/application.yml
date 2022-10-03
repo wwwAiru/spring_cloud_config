@@ -1,3 +1,6 @@
+clickup:
+  webhook:
+    secret: "secret"
 
 reproxy:
   config:
