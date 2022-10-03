@@ -33,4 +33,4 @@ org_structure:
   avatar: "d01ad323-e69b-4413-9d57-256613e62ee0"
 
 server:
-  port: 8787
+  port: 8080
