@@ -1,0 +1,14 @@
+
+reproxy:
+  config:
+    paths:
+      '[/]':
+        headers:
+          Content-Type: application/xml
+        destination:
+          forward: ${FORWARD:http://localhost:8081/debug}
+      '[/debug]':
+        headers:
+          Content-Type: application/json
+        destination:
+          forward: ${FORWARD:http://localhost:8081/debug}
