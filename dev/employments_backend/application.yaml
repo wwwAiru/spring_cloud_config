@@ -1,19 +1,21 @@
 spring:
   datasource:
-    url: ${db_url:"jdbc:h2:mem:cuerp"}
+    url: ${db_url:jdbc:h2:mem:cuerp}
     username: ${db_username}
     password: ${db_password}
     driver-class-name: org.h2.Driver
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: create
     database-platform: org.hibernate.dialect.H2Dialect
     show-sql: false
 
 # url - микросервис отпусков
 # status_type - статус отпуска
 vacations:
-  url: "http://localhost:8081/vacations/{profileListId}/{egarId}"
+  host: ${VACATION_URL:176.113.82.235}
+  port: ${VACATION_PORT:8082}
+  url: "http://${vacations.host}:${vacations.port}/vacations/{profileListId}/{egarId}"
   status_type: "done"
 
 clickup:
