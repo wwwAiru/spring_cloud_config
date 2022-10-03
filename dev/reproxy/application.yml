@@ -6,11 +6,15 @@ reproxy:
   config:
     paths:
       '[/]':
+        security:
+          enabled: true
         headers:
-          Content-Type: application/xml
+          Content-Type: application/json
         destination:
           forward: ${FORWARD:http://localhost:8081/debug}
       '[/debug]':
+        security:
+          enabled: false
         headers:
           Content-Type: application/json
         destination:
