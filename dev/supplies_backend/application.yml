@@ -1,0 +1,17 @@
+clickup:
+  fields:
+    sum: 1684305b-e60c-4903-9236-8d4157d907ae
+    task-type: adc61b90-377a-49c0-8e14-a6450d685a81
+    supply-type: e535b2a3-d080-45e7-a2f5-4d690c8e0bc6
+    relationship: a0fc2f68-fcee-4c80-9d3d-c165e7e9e658
+    description: 46eebcc6-af59-4e6c-a8ef-fc975fd8bd7b
+  lists:
+    employees: 180311895
+    supplies: 180311898
+  api:
+    tokens:
+      - ${CLICK_UP_API_TOKEN}
+
+spring:
+  jackson:
+    default-property-inclusion: non_null
