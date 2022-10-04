@@ -1,3 +1,7 @@
 file-names:
   supply: supply.json
   supplies: supplies.json
+
+clickup:
+  api:
+    tokens: dummy
