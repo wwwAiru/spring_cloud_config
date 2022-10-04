@@ -1,0 +1,10 @@
+
+files:
+  matchers:
+    json_matcher: test_matcher.json
+    yaml_matcher: test_matcher.yml
+    xml_matcher: test_matcher.xml
+
+clickup:
+  webhook:
+    secret: dummy
